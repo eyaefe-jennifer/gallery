@@ -1,0 +1,22 @@
+/your-nextjs-project
+  /public
+    /fonts
+      fa-brands-400.eot
+      fa-brands-400.woff2
+      fa-brands-400.woff
+      fa-brands-400.ttf
+      fa-brands-400.svg
+      fa-light-300.eot
+      fa-light-300.woff2
+      fa-light-300.woff
+      fa-light-300.ttf
+      fa-light-300.svg
+      fa-regular-400.eot
+      fa-regular-400.woff2
+      fa-regular-400.woff
+      fa-regular-400.ttf
+      fa-regular-400.svg
+  /pages
+  /components
+  /globals.css
+  tailwind.config.js
