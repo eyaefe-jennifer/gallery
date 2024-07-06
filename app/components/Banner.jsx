@@ -8,14 +8,15 @@ import "swiper/css/effect-fade";
 import "swiper/css/parallax";
 import { FiChevronRight } from "react-icons/fi";
 import { FiChevronLeft } from "react-icons/fi";
-import SwiperCore, {
+import {
   Navigation,
   Pagination,
   EffectFade,
   Autoplay,
   Mousewheel,
   Parallax,
-} from "swiper";
+} from "swiper/modules";
+import SwiperCore from "swiper";
 
 SwiperCore.use([
   Navigation,
@@ -120,7 +121,14 @@ const Banner = () => {
               centeredSlides={true}
               slidesPerView={1}
               loop={true}
-              pagination={{ clickable: true }}
+              pagination={{
+                clickable: true,
+                renderBullet: (index, className) => {
+                  return `<span class="${className} hero-slider-wrap_pagination-wrap2">${
+                    index + 1
+                  }</span>`;
+                },
+              }}
               navigation={{ prevEl: ".ccsw-prev", nextEl: ".ccsw-next" }}
               autoplay={{ delay: 3500, disableOnInteraction: false }}
               onSwiper={(swiper) => (swiperRef.current = { swiper })}
@@ -179,7 +187,7 @@ const Banner = () => {
               <div className="scroller"></div>
             </div>
           </div>
-          <div className="hero-slider-wrap_pagination-wrap">
+          <div className="hero-slider-wrap_pagination-wrap2">
             <div className="hero-slider-wrap_pagination hero-slider-pag swiper-pagination-clickable swiper-pagination-bullets"></div>
           </div>
           <div className="slide-progress-wrap">

@@ -1398,11 +1398,12 @@ blockquote p {
 }
 .hero-slider-wrap_pagination-wrap {
   position: relative;
-  top: 40%;
+  top: 60%;
   transform: translateY(-50%);
   width: 6px;
   left: 50%;
   margin-left: -3px;
+  color: #fff;
 }
 .hsc {
   position: absolute;
@@ -2118,7 +2119,10 @@ blockquote p {
   z-index: 1;
 }
 .gallery-items {
-  min-height: 80vh;
+  min-height: 100vh;
+  width: 100vh;
+  justify-content: center;
+
 }
 .gallery-items_single {
   min-height: inherit;
@@ -3048,6 +3052,7 @@ section {
   color: #fff;
   font-family: "Poppins", sans-serif;
   -webkit-appearance: none;
+  appearance: none;
 }
 .custom-form input::-webkit-input-placeholder,
 .custom-form textarea::-webkit-input-placeholder {
@@ -3071,6 +3076,7 @@ section {
   resize: none;
   padding: 35px 30px 25px 30px;
   -webkit-appearance: none;
+  appearance: none;
 }
 .custom-form input {
   margin-bottom: 20px;
@@ -3082,6 +3088,7 @@ section {
   border: none;
   cursor: pointer;
   -webkit-appearance: none;
+  appearance: none;
   font-family: "Poppins", sans-serif;
   border-radius: 30px;
 }
@@ -3402,7 +3409,7 @@ section {
   color: #fff;
 }
 .blog-search-wrap {
-  /* display: table; */
+  display: table;
 }
 .blog-opt {
   position: relative;
@@ -3534,7 +3541,7 @@ section {
   font-weight: 800;
 }
 .pr-tags {
-  /* display: table; */
+  display: table;
 }
 .pr-tags span {
   float: left;
